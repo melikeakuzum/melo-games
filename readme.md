@@ -55,3 +55,57 @@ MeloGames, React ve Next.js kullanılarak geliştirilmiş modern bir mini oyunla
    - Gerçek zamanlı feedback
 
 ### Proje Yapısı
+
+melogames/
+├── app/ # Next.js app router pages
+├── components/ # Reusable components
+├── public/ # Static assets
+└── lib/ # Utility functions
+
+
+### Performans İyileştirmeleri
+1. **Component Optimizasyonu**
+   ```typescript
+   const GameCard = React.memo(function GameCard({ game }: GameProps) {
+     return (...)
+   })
+   ```
+
+2. **State Optimizasyonu**
+   ```typescript
+   const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b])
+   ```
+
+3. **Event Handler Optimizasyonu**
+   ```typescript
+   const handleClick = useCallback(() => {
+     // handler logic
+   }, [dependencies])
+   ```
+
+### Gelecek Geliştirmeler
+- [ ] Kullanıcı authentication sistemi
+- [ ] Yüksek skor tablosu
+- [ ] Çoklu dil desteği
+- [ ] PWA desteği
+- [ ] Daha fazla oyun eklenmesi
+
+## 🚀 Kurulum
+bash
+Repoyu klonlayın
+git clone https://github.com/yourusername/melogames.git
+Bağımlılıkları yükleyin
+npm install
+Geliştirme sunucusunu başlatın
+npm run dev
+
+
+## 🤝 Katkıda Bulunma
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 Lisans
+Bu proje MIT lisansı altında lisanslanmıştır.
