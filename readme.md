@@ -1,4 +1,8 @@
-# MeloGames - Mini Oyunlar Platformu
+# MeloGames - Mini Oyunlar Platformu (YAYINLANDI!!!)
+
+
+https://mel-games.onrender.com/
+
 
 MeloGames, React ve Next.js kullanılarak geliştirilmiş modern bir mini oyunlar platformudur. Kullanıcılar çeşitli eğlenceli oyunları oynayabilir ve yeteneklerini test edebilirler.
 
