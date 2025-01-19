@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Performans için önemli stilleri buraya taşıyalım */
+@layer components {
+  .game-card {
+    @apply h-full hover:shadow-xl transition-all duration-300 cursor-pointer;
+    contain: content;
+  }
+  
+  .game-icon {
+    @apply text-5xl mb-4 transition-transform duration-300;
+    will-change: transform;
+  }
+}
+
+/* Font optimizasyonu */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/inter.woff2') format('woff2');
+}
+
+/* Sayfa geçişleri için smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Layout shift önleme */
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
